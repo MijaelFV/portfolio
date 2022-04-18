@@ -13,8 +13,12 @@ const Home: NextPage = () => {
     <div>
       <Head>
           <title>Portfolio Mijael</title>
-          <meta name="description" content="Mijael Flores Vega Portfolio" />
+          <meta name="title" content="Portfolio Mijael"></meta>
+          <meta name="description" content="Portfolio of Mijael Flores Vega with details of his knowledge, personality and projects." />
           <link rel="icon" href="/favicon.ico" />
+          <meta property="og:title" content="Portfolio Mijael"/>
+          <meta property="og:description" content="Portfolio of Mijael Flores Vega with details of his knowledge, personality and projects."/>
+          <meta property="og:image" content="https://i.imgur.com/rmyU0v1.png"/>
       </Head>
       <main className="flex flex-col items-center">
           <div className="transition-all w-full" 

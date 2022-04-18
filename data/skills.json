@@ -1,0 +1,81 @@
+{
+  "techLearned": [
+      {
+          "name": "React",
+          "img": "/assets/techs/react.svg",
+          "knwl": "Excellent"
+      },
+      {
+          "name": "Next",
+          "img": "/assets/techs/nextjs.svg",
+          "knwl": "Excellent"
+      },
+      {
+          "name": "Typescript",
+          "img": "/assets/techs/typescript.svg",
+          "knwl": "Excellent"
+      },
+      {
+          "name": "JavaScript",
+          "img": "/assets/techs/javascript.svg",
+          "knwl": "Expert"
+      },
+      {
+          "name": "Solidity",
+          "img": "/assets/techs/solidity.svg",
+          "knwl": "Excellent"
+      },
+      {
+          "name": "Node",
+          "img": "/assets/techs/nodejs.svg",
+          "knwl": "Excellent"
+      },
+      {
+          "name": "Express",
+          "img": "/assets/techs/express.svg",
+          "knwl": "Excellent"
+      },
+      {
+        "name": "Git/Github",
+        "img": "/assets/techs/github.svg",
+        "knwl": "Excellent"
+      },
+      {
+          "name": "Sass",
+          "img": "/assets/techs/sass.svg",
+          "knwl": "Proficient"
+      },
+      {
+        "name": "CSS3",
+        "img": "/assets/techs/css3.svg",
+        "knwl": "Expert"
+      },
+      {
+          "name": "HTML",
+          "img": "/assets/techs/html.svg",
+          "knwl": "Expert"
+      }
+  ],
+  "langs": [
+      {
+          "name": "Spanish",
+          "img": "/assets/langs/argentina.svg",
+          "knwl": "Native"
+      },
+      {
+          "name": "English",
+          "img": "/assets/langs/usa.svg",
+          "knwl": "Advanced"
+      },
+      {
+          "name": "French",
+          "img": "/assets/langs/france.svg",
+          "knwl": "Beginner"
+      },
+      {
+          "name": "German",
+          "img": "/assets/langs/germany.svg",
+          "knwl": "Beginner"
+      }
+  ]
+}

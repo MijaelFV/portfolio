@@ -42,19 +42,20 @@ const Portfolio = () => {
     const opacity = useTransform(scrollYProgress, [start! / 1.5, end! / 1.2], [0, 1]);
 
     return <motion.div 
-        className="flex flex-col gap-5"
+        className="flex flex-col gap-8"
         style={{
-          opacity
+          opacity,
         }}
         ref={first}
       >
         {
           projects.map((p, i) => (
-            <div key={i} className="bg-slate-800 rounded-xl overflow-hidden flex flex-col md:flex-row">
-              <div className='flex justify-center items-center bg-black'>
+            <div key={i} className="gap-5 flex flex-col md:flex-row items-center">
+              <div className='flex justify-center items-center rounded-2xl overflow-hidden'>
                 <Image src={p.img} width={380} height={200} alt={`${p.name} image`}/>
               </div>
-              <div className='mx-4 my-3 md:w-2/3'>
+              <div className='bg-slate-800 overflow-auto p-3 rounded-xl md:w-2/3' style={{height: "186.85px"}}>
+                <h3 className='rounded-lg text-xl mb-2 font-bold'>{p.name}</h3>
                 <span className="flex gap-2 mb-4 flex-wrap">
                   {
                     p.tech.map((t, i) => (
@@ -62,8 +63,7 @@ const Portfolio = () => {
                       ))
                     }
                 </span>
-                <h3 className='rounded-lg text-xl mb-2 font-bold'>{p.name}</h3>
-                <p className='font-medium overflow-auto'>
+                <p className='font-medium'>
                   {p.desc}
                 </p>
               </div>

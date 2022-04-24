@@ -3,6 +3,8 @@ import Image from "next/image"
 import { motion, useTransform, useViewportScroll } from "framer-motion";
 import useRefScrollProgress from '../hooks/refViewportProgress';
 import skills from '../data/skills.json';
+import StarOutlinedIcon from '@mui/icons-material/StarOutlined';
+import { StarHalf } from '@mui/icons-material';
 
 
 const Skills = () => {
@@ -24,7 +26,7 @@ const Skills = () => {
         }}
         className="text-4xl font-bold text-white"
       >
-          APTITUDE
+          SKILLS
       </motion.h1>
       <motion.span 
         style={{
@@ -38,38 +40,124 @@ const Skills = () => {
     const first = useRef(null);
     const {end, start} = useRefScrollProgress(first)
 
-    const opacity = useTransform(scrollYProgress, [start! / 1.5, end! / 1.2], [0, 1]);
+    const opacity = useTransform(scrollYProgress, [start! / 1.5, end! / 2], [0, 1]);
 
     return <motion.div 
-      className="flex flex-col gap-5 font-medium justify-start"
+      className="flex flex-col gap-14 font-medium justify-start"
       ref={first}
       style={{
           opacity
       }}
     >
-      <h2 className="text-teal-300 text-2xl">Technologies</h2>
-      <div className="grid gap-5 justify-start mb-8" style={{gridTemplateColumns: "repeat(auto-fit, minmax(110px, 1fr))"}}>
-          {
-              skills.techLearned.map((data, i) => {
-                  return <div key={i}>
-                      <Image src={data.img} width={40} height={40} alt={`${data.name} logo`} /> 
-                      <p className="font-bold text-lg whitespace-nowrap">{data.name}</p>
-                      <p className="text-emerald-400">{data.knwl}</p>
-                  </div>
-              })
-          }
+      <div className='flex flex-col gap-6'>
+        <h2 className="text-teal-300 text-2xl border-l-4 pl-3 border-teal-300">Code languages</h2>
+        <div className="flex gap-5 justify-start flex-wrap">
+            {
+                skills.techLearned.languages.map((data, i) => {
+                    return <div key={i} style={{width: 150}} >
+                        <Image src={data.img} width={40} height={40} alt={`${data.name} logo`} /> 
+                        <p className="font-bold text-lg whitespace-nowrap">{data.name}</p>
+                        <span className="text-teal-300">
+                          {
+                            Array.from(Array(data.stars).keys()).map((s, i, a) => {
+                              if (i === (a.length - 1) && data.half === true) {
+                                return <StarHalf key={i} />
+                              }
+                                
+                              return <StarOutlinedIcon key={i} />
+                            })
+                          }
+                          {
+                            Array.from(Array(5 - data.stars).keys()).map((s, i) => (
+                              <StarOutlinedIcon 
+                                key={i}
+                                className="text-teal-900"
+                              />
+                            ))
+                          }
+                        </span>
+                    </div>
+                })
+            }
+        </div>
       </div>
-      <h2 className="text-teal-300 text-2xl">Languages</h2>
-      <div className="grid gap-5 justify-start" style={{gridTemplateColumns: "repeat(auto-fit, minmax(80px, 1fr))"}}>
-          {
-              skills.langs.map((data, i) => {
-                  return <div key={i}>
-                      <Image src={data.img} width={40} height={40} alt={`${data.name} flag`} /> 
-                      <p className="font-bold text-lg whitespace-nowrap">{data.name}</p>
-                      <p className="text-emerald-400">{data.knwl}</p>
-                  </div>
-              })
-          }
+      <div className='flex flex-col gap-6'>
+        <h2 className="text-teal-300 text-2xl border-l-4 pl-3 border-teal-300">Frameworks & libraries</h2>
+        <div className="flex gap-5 justify-start flex-wrap">
+            {
+                skills.techLearned.frameworksLibraries.map((data, i) => {
+                    return <div key={i} style={{width: 150}} >
+                        <Image src={data.img} width={40} height={40} alt={`${data.name} logo`} /> 
+                        <p className="font-bold text-lg whitespace-nowrap">{data.name}</p>
+                        <span className="text-teal-300">
+                          {
+                            Array.from(Array(data.stars).keys()).map((s, i, a) => {
+                              if (i === (a.length - 1) && data.half === true) {
+                                return <StarHalf key={i} />
+                              }
+                                
+                              return <StarOutlinedIcon key={i} />
+                            })
+                          }
+                          {
+                            Array.from(Array(5 - data.stars).keys()).map((s, i) => (
+                              <StarOutlinedIcon 
+                                key={i}
+                                className="text-teal-900"
+                              />
+                            ))
+                          }
+                        </span>
+                    </div>
+                })
+            }
+        </div>
+      </div>
+      <div className='flex flex-col gap-6'>
+        <h2 className="text-teal-300 text-2xl border-l-4 pl-3 border-teal-300">Other</h2>
+        <div className="flex gap-5 justify-start flex-wrap">
+            {
+                skills.techLearned.other.map((data, i) => {
+                    return <div key={i} style={{width: 150}} >
+                        <Image src={data.img} width={40} height={40} alt={`${data.name} logo`} /> 
+                        <p className="font-bold text-lg whitespace-nowrap">{data.name}</p>
+                        <span className="text-teal-300">
+                          {
+                            Array.from(Array(data.stars).keys()).map((s, i, a) => {
+                              if (i === (a.length - 1) && data.half === true) {
+                                return <StarHalf key={i} />
+                              }
+                                
+                              return <StarOutlinedIcon key={i} />
+                            })
+                          }
+                          {
+                            Array.from(Array(5 - data.stars).keys()).map((s, i) => (
+                              <StarOutlinedIcon 
+                                key={i}
+                                className="text-teal-900"
+                              />
+                            ))
+                          }
+                        </span>
+                    </div>
+                })
+            }
+        </div>
+      </div>
+      <div className='flex flex-col gap-6'>
+        <h2 className="text-teal-300 text-2xl border-l-4 pl-3 border-teal-300">Spoken languages</h2>
+        <div className="flex gap-5 justify-start flex-wrap">
+            {
+                skills.langs.map((data, i) => {
+                    return <div key={i} style={{width: 150}} >
+                        <Image src={data.img} width={40} height={40} alt={`${data.name} flag`} /> 
+                        <p className="font-bold text-lg whitespace-nowrap">{data.name}</p>
+                        <p className="text-emerald-400">{data.knwl}</p>
+                    </div>
+                })
+            }
+        </div>
       </div>
   </motion.div>
 }

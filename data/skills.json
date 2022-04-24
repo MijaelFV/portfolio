@@ -1,61 +1,133 @@
 {
-  "techLearned": [
+  "techLearned": {
+    "languages": [
       {
-          "name": "React",
-          "img": "/assets/techs/react.svg",
-          "knwl": "Excellent"
+        "name": "Typescript",
+        "img": "/assets/techs/typescript.svg",
+        "stars": 4,
+        "half": true
       },
       {
-          "name": "Next",
-          "img": "/assets/techs/nextjs.svg",
-          "knwl": "Excellent"
+        "name": "JavaScript",
+        "img": "/assets/techs/javascript.svg",
+        "stars": 5,
+        "half": true
       },
       {
-          "name": "Typescript",
-          "img": "/assets/techs/typescript.svg",
-          "knwl": "Excellent"
-      },
-      {
-          "name": "JavaScript",
-          "img": "/assets/techs/javascript.svg",
-          "knwl": "Expert"
-      },
-      {
-          "name": "Solidity",
-          "img": "/assets/techs/solidity.svg",
-          "knwl": "Excellent"
-      },
-      {
-          "name": "Node",
-          "img": "/assets/techs/nodejs.svg",
-          "knwl": "Excellent"
-      },
-      {
-          "name": "Express",
-          "img": "/assets/techs/express.svg",
-          "knwl": "Excellent"
-      },
-      {
-        "name": "Git/Github",
-        "img": "/assets/techs/github.svg",
-        "knwl": "Excellent"
-      },
-      {
-          "name": "Sass",
-          "img": "/assets/techs/sass.svg",
-          "knwl": "Proficient"
+        "name": "Solidity",
+        "img": "/assets/techs/solidity.svg",
+        "stars": 4,
+        "half": false
       },
       {
         "name": "CSS3",
         "img": "/assets/techs/css3.svg",
-        "knwl": "Expert"
+        "stars": 5,
+        "half": true
       },
       {
-          "name": "HTML",
-          "img": "/assets/techs/html.svg",
-          "knwl": "Expert"
+        "name": "HTML",
+        "img": "/assets/techs/html.svg",
+        "stars": 5,
+        "half": false
       }
-  ],
+    ],
+    "frameworksLibraries": [
+      {
+        "name": "React",
+        "img": "/assets/techs/react.svg",
+        "stars": 5,
+        "half": true
+      },
+      {
+        "name": "Next",
+        "img": "/assets/techs/nextjs.svg",
+        "stars": 4,
+        "half": false
+      },
+      {
+        "name": "Node",
+        "img": "/assets/techs/nodejs.svg",
+        "stars": 5,
+        "half": true
+      },
+      {
+        "name": "Express",
+        "img": "/assets/techs/express.svg",
+        "stars": 4,
+        "half": false
+      },
+      {
+        "name": "Redux",
+        "img": "/assets/techs/redux.svg",
+        "stars": 4,
+        "half": false
+      },
+      {
+        "name": "Ethers",
+        "img": "/assets/techs/ethers.svg",
+        "stars": 5,
+        "half": true
+      },
+      {
+        "name": "MaterialUI",
+        "img": "/assets/techs/materialui.svg",
+        "stars": 4,
+        "half": false
+      },
+      {
+        "name": "Tailwind",
+        "img": "/assets/techs/tailwind.svg",
+        "stars": 4,
+        "half": true
+      },
+      {
+        "name": "Sass",
+        "img": "/assets/techs/sass.svg",
+        "stars": 5,
+        "half": true
+      },
+      {
+        "name": "Sequelize",
+        "img": "/assets/techs/sequelize.svg",
+        "stars": 4,
+        "half": false
+      },
+      {
+        "name": "Mongoose",
+        "img": "/assets/techs/mongoose.svg",
+        "stars": 5,
+        "half": true
+      }
+    ],
+    "other": [
+      {
+        "name": "Git/Github",
+        "img": "/assets/techs/github.svg",
+        "stars": 4,
+        "half": true
+      },
+      {
+        "name": "Scrum Method",
+        "img": "/assets/techs/scrum.svg",
+        "stars": 4,
+        "half": true
+      },
+      {
+        "name": "MariaDB",
+        "img": "/assets/techs/mariadb.svg",
+        "stars": 4,
+        "half": true
+      },
+      {
+        "name": "MongoDB",
+        "img": "/assets/techs/mongodb.svg",
+        "stars": 5,
+        "half": true
+      }
+    ]
+  }
+  ,
   "langs": [
       {
           "name": "Spanish",
@@ -65,17 +137,17 @@
       {
           "name": "English",
           "img": "/assets/langs/usa.svg",
-          "knwl": "Advanced"
+          "knwl": "C1"
       },
       {
           "name": "French",
           "img": "/assets/langs/france.svg",
-          "knwl": "Beginner"
+          "knwl": "A2"
       },
       {
           "name": "German",
           "img": "/assets/langs/germany.svg",
-          "knwl": "Beginner"
+          "knwl": "A1"
       }
   ]
 }

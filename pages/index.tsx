@@ -12,16 +12,16 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-          <title>Portfolio Mijael</title>
+          <title>Mijael Flores Vega</title>
           <meta name="title" content="Portfolio Mijael"></meta>
-          <meta name="description" content="Portfolio of Mijael Flores Vega with details of his knowledge, personality and projects." />
+          <meta name="description" content="Personal website of Mijael Flores Vega with details of his knowledge, personality and projects." />
           <link rel="icon" href="/favicon.ico" />
           <meta property="og:title" content="Portfolio Mijael"/>
-          <meta property="og:description" content="Portfolio of Mijael Flores Vega with details of his knowledge, personality and projects."/>
+          <meta property="og:description" content="Personal website of Mijael Flores Vega with details of his knowledge, personality and projects."/>
           <meta property="og:image" content="https://i.imgur.com/rmyU0v1.png"/>
       </Head>
       <main className="flex flex-col items-center">
-          <div className="transition-all w-full" 
+          <div className="transition-all w-full bg-gradient-to-b from-slate-700 to-gray-900" 
             style={{opacity: progress < 95 ? 0 : 1}}
           >
               <Hero />

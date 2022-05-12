@@ -1,129 +1,99 @@
 {
   "techLearned": {
-    "languages": [
+    "frontEnd": [
       {
         "name": "Typescript",
-        "img": "/assets/techs/typescript.svg",
-        "stars": 4,
-        "half": true
+        "img": "/assets/techs/typescript.svg"        
       },
       {
         "name": "JavaScript",
-        "img": "/assets/techs/javascript.svg",
-        "stars": 5,
-        "half": true
+        "img": "/assets/techs/javascript.svg"        
       },
       {
-        "name": "Solidity",
-        "img": "/assets/techs/solidity.svg",
-        "stars": 4,
-        "half": false
+        "name": "ReactJS",
+        "img": "/assets/techs/react.svg"        
       },
       {
-        "name": "CSS3",
-        "img": "/assets/techs/css3.svg",
-        "stars": 5,
-        "half": true
-      },
-      {
-        "name": "HTML",
-        "img": "/assets/techs/html.svg",
-        "stars": 5,
-        "half": false
-      }
-    ],
-    "frameworksLibraries": [
-      {
-        "name": "React",
-        "img": "/assets/techs/react.svg",
-        "stars": 5,
-        "half": true
-      },
-      {
-        "name": "Next",
-        "img": "/assets/techs/nextjs.svg",
-        "stars": 4,
-        "half": false
-      },
-      {
-        "name": "Node",
-        "img": "/assets/techs/nodejs.svg",
-        "stars": 5,
-        "half": true
-      },
-      {
-        "name": "Express",
-        "img": "/assets/techs/express.svg",
-        "stars": 4,
-        "half": false
+        "name": "NextJS",
+        "img": "/assets/techs/nextjs.svg"        
       },
       {
         "name": "Redux",
-        "img": "/assets/techs/redux.svg",
-        "stars": 4,
-        "half": false
-      },
-      {
-        "name": "Ethers",
-        "img": "/assets/techs/ethers.svg",
-        "stars": 5,
-        "half": true
+        "img": "/assets/techs/redux.svg"        
       },
       {
         "name": "MaterialUI",
-        "img": "/assets/techs/materialui.svg",
-        "stars": 4,
-        "half": false
+        "img": "/assets/techs/materialui.svg"        
       },
       {
-        "name": "Tailwind",
-        "img": "/assets/techs/tailwind.svg",
-        "stars": 4,
-        "half": true
+        "name": "TailwindCSS",
+        "img": "/assets/techs/tailwind.svg"        
       },
       {
-        "name": "Sass",
-        "img": "/assets/techs/sass.svg",
-        "stars": 5,
-        "half": true
+        "name": "SASS",
+        "img": "/assets/techs/sass.svg"        
+      },
+      {
+        "name": "CSS3",
+        "img": "/assets/techs/css3.svg"        
+      },
+      {
+        "name": "HTML",
+        "img": "/assets/techs/html.svg"        
+      }
+    ],
+    "backEnd": [
+      {
+        "name": "NodeJS",
+        "img": "/assets/techs/nodejs.svg"        
+      },
+      {
+        "name": "Express",
+        "img": "/assets/techs/express.svg"        
       },
       {
         "name": "Sequelize",
-        "img": "/assets/techs/sequelize.svg",
-        "stars": 4,
-        "half": false
+        "img": "/assets/techs/sequelize.svg"        
       },
       {
         "name": "Mongoose",
-        "img": "/assets/techs/mongoose.svg",
-        "stars": 5,
-        "half": true
-      }
-    ],
-    "other": [
-      {
-        "name": "Git/Github",
-        "img": "/assets/techs/github.svg",
-        "stars": 4,
-        "half": true
-      },
-      {
-        "name": "Scrum Method",
-        "img": "/assets/techs/scrum.svg",
-        "stars": 4,
-        "half": true
+        "img": "/assets/techs/mongoose.svg"        
       },
       {
         "name": "MariaDB",
-        "img": "/assets/techs/mariadb.svg",
-        "stars": 4,
-        "half": true
+        "img": "/assets/techs/mariadb.svg"        
       },
       {
         "name": "MongoDB",
-        "img": "/assets/techs/mongodb.svg",
-        "stars": 5,
-        "half": true
+        "img": "/assets/techs/mongodb.svg"        
+      }
+    ],
+    "Blockchain": [
+      {
+        "name": "Solidity",
+        "img": "/assets/techs/solidity.svg"        
+      },
+      {
+        "name": "EthersJS",
+        "img": "/assets/techs/ethers.svg"        
+      },
+      {
+        "name": "Waffle",
+        "img": "/assets/techs/waffle.svg"        
+      },
+      {
+        "name": "Hardhat",
+        "img": "/assets/techs/hardhat.svg"        
+      }
+    ],
+    "misc": [
+      {
+        "name": "Git/Github",
+        "img": "/assets/techs/github.svg"        
+      },
+      {
+        "name": "Agile - Scrum",
+        "img": "/assets/techs/scrum.svg"        
       }
     ]
   }
@@ -137,7 +107,7 @@
       {
           "name": "English",
           "img": "/assets/langs/usa.svg",
-          "knwl": "C1"
+          "knwl": "C1 Advanced"
       },
       {
           "name": "French",

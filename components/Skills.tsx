@@ -5,6 +5,7 @@ import useRefScrollProgress from '../hooks/refViewportProgress';
 import skills from '../data/skills.json';
 import StarOutlinedIcon from '@mui/icons-material/StarOutlined';
 import { StarHalf } from '@mui/icons-material';
+import { SkillShowcase } from './skills/SkillShowcase';
 
 
 const Skills = () => {
@@ -50,107 +51,23 @@ const Skills = () => {
       }}
     >
       <div className='flex flex-col gap-6'>
-        <h2 className="text-teal-300 text-2xl border-l-4 pl-3 border-teal-300">Code languages</h2>
-        <div className="flex gap-5 justify-start flex-wrap">
-            {
-                skills.techLearned.languages.map((data, i) => {
-                    return <div key={i} style={{width: 150}} >
-                        <Image src={data.img} width={40} height={40} alt={`${data.name} logo`} /> 
-                        <p className="font-bold text-lg whitespace-nowrap">{data.name}</p>
-                        <span className="text-teal-300">
-                          {
-                            Array.from(Array(data.stars).keys()).map((s, i, a) => {
-                              if (i === (a.length - 1) && data.half === true) {
-                                return <StarHalf key={i} />
-                              }
-                                
-                              return <StarOutlinedIcon key={i} />
-                            })
-                          }
-                          {
-                            Array.from(Array(5 - data.stars).keys()).map((s, i) => (
-                              <StarOutlinedIcon 
-                                key={i}
-                                className="text-teal-900"
-                              />
-                            ))
-                          }
-                        </span>
-                    </div>
-                })
-            }
-        </div>
+        <SkillShowcase className='to-teal-700' skills={skills.techLearned.frontEnd} title="Front-end" />
       </div>
       <div className='flex flex-col gap-6'>
-        <h2 className="text-teal-300 text-2xl border-l-4 pl-3 border-teal-300">Frameworks & libraries</h2>
-        <div className="flex gap-5 justify-start flex-wrap">
-            {
-                skills.techLearned.frameworksLibraries.map((data, i) => {
-                    return <div key={i} style={{width: 150}} >
-                        <Image src={data.img} width={40} height={40} alt={`${data.name} logo`} /> 
-                        <p className="font-bold text-lg whitespace-nowrap">{data.name}</p>
-                        <span className="text-teal-300">
-                          {
-                            Array.from(Array(data.stars).keys()).map((s, i, a) => {
-                              if (i === (a.length - 1) && data.half === true) {
-                                return <StarHalf key={i} />
-                              }
-                                
-                              return <StarOutlinedIcon key={i} />
-                            })
-                          }
-                          {
-                            Array.from(Array(5 - data.stars).keys()).map((s, i) => (
-                              <StarOutlinedIcon 
-                                key={i}
-                                className="text-teal-900"
-                              />
-                            ))
-                          }
-                        </span>
-                    </div>
-                })
-            }
-        </div>
+        <SkillShowcase className='to-teal-900' skills={skills.techLearned.backEnd} title="Back-end" />
       </div>
       <div className='flex flex-col gap-6'>
-        <h2 className="text-teal-300 text-2xl border-l-4 pl-3 border-teal-300">Other</h2>
-        <div className="flex gap-5 justify-start flex-wrap">
-            {
-                skills.techLearned.other.map((data, i) => {
-                    return <div key={i} style={{width: 150}} >
-                        <Image src={data.img} width={40} height={40} alt={`${data.name} logo`} /> 
-                        <p className="font-bold text-lg whitespace-nowrap">{data.name}</p>
-                        <span className="text-teal-300">
-                          {
-                            Array.from(Array(data.stars).keys()).map((s, i, a) => {
-                              if (i === (a.length - 1) && data.half === true) {
-                                return <StarHalf key={i} />
-                              }
-                                
-                              return <StarOutlinedIcon key={i} />
-                            })
-                          }
-                          {
-                            Array.from(Array(5 - data.stars).keys()).map((s, i) => (
-                              <StarOutlinedIcon 
-                                key={i}
-                                className="text-teal-900"
-                              />
-                            ))
-                          }
-                        </span>
-                    </div>
-                })
-            }
-        </div>
+        <SkillShowcase className='to-cyan-800' skills={skills.techLearned.Blockchain} title="Blockchain" />
       </div>
       <div className='flex flex-col gap-6'>
-        <h2 className="text-teal-300 text-2xl border-l-4 pl-3 border-teal-300">Spoken languages</h2>
-        <div className="flex gap-5 justify-start flex-wrap">
+        <SkillShowcase className='to-slate-600' skills={skills.techLearned.misc} title="Misc" />
+      </div>
+      <div className='flex flex-col gap-6'>
+        <h2 className="text-teal-300 text-2xl border-x-4 px-3 mx-auto border-teal-300 max-w-min whitespace-nowrap">Spoken languages</h2>
+        <div className="flex gap-14 justify-center flex-wrap">
             {
                 skills.langs.map((data, i) => {
-                    return <div key={i} style={{width: 150}} >
+                    return <div key={i} style={{minWidth: 115}} className="p-2 rounded-lg flex flex-col items-center">
                         <Image src={data.img} width={40} height={40} alt={`${data.name} flag`} /> 
                         <p className="font-bold text-lg whitespace-nowrap">{data.name}</p>
                         <p className="text-emerald-400">{data.knwl}</p>

@@ -1,36 +1,97 @@
-[
   {
-    "name": "Hidden - In progress",
-    "img": "/assets/projects/prode.png",
-    "desc": "In this project I am developing the front-end of a decentralized application whose back-end is only the Blockchain and the Smart-Contracts developed for the App. The topic of this App is the world of soccer championships.",
-    "tech": [
-      "React",
-      "Next",
-      "TypeScript",
-      "Solidity"
-    ]
-  },
-  {
-    "name": "Personal Finance",
-    "img": "/assets/projects/finance.png",
-    "desc": "This project presents a personal finance APP. I developed a full front-end and back-end to complete a full-stack-js challenge for the training platform 'Alkemy'. In this APP a user must register to start managing their finances, allowing them to record data of their movements and categorize them. The data is stored in a relational database (MariaDB).",
-    "tech": [
-      "React",
-      "Next",
-      "JavaScript",
-      "Node",
-      "Express"
-    ]
-  },
-  {
-    "name": "Inventory Organizer",
-    "img": "/assets/projects/inventory.png",
-    "desc": "The application was developed to help manage my family's inventory. It was completely front-end and back-end, storing the data in a non-relational database (MongoDB). Complex cruds of users, spaces, items, images, movements, etc. were handled to allow users to record in detail the contents of their stores, as well as their positions physically and allow them to find them more easily. A tracking of the objects taken and entered objects is kept to know at all times that a user has consumed or has x object. Among other functionalities.",
-    "tech": [
-      "React",
-      "JavaScript",
-      "Node",
-      "Express"
+    "inProgress": [
+      {
+        "name": "Crypto betting",
+        "img": "/assets/projects/prode.png",
+        "role": "Full Stack",
+        "desc": "In this project I am developing the front-end of a decentralized application whose back-end is only the Blockchain and the Smart-Contracts developed for the App. The topic of this App is the world of soccer championships.",
+        "tech": [
+          "ReactJS",
+          "NextJS",
+          "TypeScript",
+          "TailwindCSS",
+          "Solidity",
+          "EthersJS",
+          "Hardhat",
+          "Waffle",
+          "MaterialUI"
+        ]
+      },
+      {
+        "name": "Weather forecast",
+        "role": "Full Stack",
+        "desc": "In this project I am developing the front-end of a decentralized application whose back-end is only the Blockchain and the Smart-Contracts developed for the App. The topic of this App is the world of soccer championships.",
+        "tech": [
+          "ReactJS",
+          "NextJS",
+          "TypeScript",
+          "TailwindCSS"
+        ]
+      },
+      {
+        "name": "Mercado libre - Clon",
+        "role": "Full Stack",
+        "desc": "In this project I am developing the front-end of a decentralized application whose back-end is only the Blockchain and the Smart-Contracts developed for the App. The topic of this App is the world of soccer championships.",
+        "tech": [
+          "ReactJS",
+          "NextJS",
+          "TypeScript",
+          "TailwindCSS",
+          "Golang"
+        ]
+      }
+    ],
+    "completed": [
+      {
+        "name": "Personal finance",
+        "img": "/assets/projects/finance.png",
+        "role": "Full Stack",
+        "dates": "07/21 - 09/21",
+        "desc": "This project presents a personal finance APP. I developed a full front-end and back-end to complete a full-stack-js challenge for the training platform 'Alkemy'. In this APP a user must register to start managing their finances, allowing them to record data of their movements and categorize them. The data is stored in a relational database (MariaDB).",
+        "tech": [
+          "ReactJS",
+          "NextJS",
+          "JavaScript",
+          "TailwindCSS",
+          "Node",
+          "Express",
+          "Sequelize",
+          "MariaDB",
+          "MaterialUI"
+        ]
+      },
+      {
+        "name": "My portfolio",
+        "img": "/assets/projects/portfolio.png",
+        "role": "Full Stack",
+        "dates": "07/21 - 09/21",
+        "desc": "This project presents a personal finance APP. I developed a full front-end and back-end to complete a full-stack-js challenge for the training platform 'Alkemy'. In this APP a user must register to start managing their finances, allowing them to record data of their movements and categorize them. The data is stored in a relational database (MariaDB).",
+        "tech": [
+          "ReactJS",
+          "NextJS",
+          "Typescript",
+          "TailwindCSS",
+          "FramerMotion",
+          "ThreeJS"
+        ]
+      },
+      {
+        "name": "Inventory organizer",
+        "img": "/assets/projects/inventory.png",
+        "role": "Full Stack",
+        "dates": "07/21 - 09/21",
+        "desc": "The application was developed to help manage my family's inventory. It was completely front-end and back-end, storing the data in a non-relational database (MongoDB). Complex cruds of users, spaces, items, images, movements, etc. were handled to allow users to record in detail the contents of their stores, as well as their positions physically and allow them to find them more easily. A tracking of the objects taken and entered objects is kept to know at all times that a user has consumed or has x object. Among other functionalities.",
+        "tech": [
+          "ReactJS",
+          "Redux",
+          "JavaScript",
+          "TailwindCSS",
+          "Node",
+          "Express",
+          "Mongoose",
+          "MongoDB",
+          "MaterialUI"
+        ]
+      }
     ]
   }
-]

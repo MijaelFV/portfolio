@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { use100vh } from "react-div-100vh";
 import ReactTypingEffect from 'react-typing-effect';
 import ThreeScene from "../components/ThreeScene";
@@ -17,8 +17,11 @@ export const Hero = () => {
     const translateY = useTransform(scrollYProgress, [start! * 2 , end! * 2], [0, 200]);
     const opacity = useTransform(scrollYProgress, [start! * 2 , end! * 1.2], [1, 0]);
 
+    const [showHero, setShowHero] = useState<"always"|"demand">('always');
+
   return (
-    <motion.section className="bg-slate-800 relative text-white overflow-hidden" style={{height: heroHeight, width:"100%"}}
+    <motion.section  
+        className="bg-slate-800 relative text-white overflow-hidden" style={{height: heroHeight, width:"100%"}}
         animate={{opacity:1}}
         initial={{opacity:0}}
         transition={{duration: 3}}
@@ -26,11 +29,13 @@ export const Hero = () => {
         <motion.div 
             ref={hero}
             style={{
-                translateY
+                translateY,
             }} 
+            onViewportEnter={() => setShowHero('always')}
+            onViewportLeave={() => setShowHero('demand')}
             className="w-full h-full"
         >
-            <ThreeScene />
+            <ThreeScene renderState={showHero} />
         </motion.div>
         <div className="flex flex-col gap-3 absolute" style={{left:"50%", top:"50%", transform: "translate(-50%, -50%)"}}>
             <motion.div
@@ -43,7 +48,7 @@ export const Hero = () => {
                 initial={{y: -70, opacity: 0}}
                 transition={{ duration: 2 }}
             >
-                <ReactTypingEffect className="select-none text-2xl font-bold italic text-center whitespace-nowrap text-teal-400" text={["Front-End Developer", "Self-Taught"]} speed={50} eraseSpeed={30} typingDelay={800} />
+                <ReactTypingEffect className="select-none text-2xl font-bold italic text-center whitespace-nowrap text-teal-400" text={["Front-End Developer", "Self-Taught"]} eraseDelay={1000} speed={65} eraseSpeed={30} typingDelay={800} />
                 <p className="text-7xl font-bold italic text-center drop-shadow-2xl select-none">
                     Mijael Flores Vega
                 </p>

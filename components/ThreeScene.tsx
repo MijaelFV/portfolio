@@ -4,14 +4,18 @@ import { SpotLight, Stars } from "@react-three/drei";
 import { EffectComposer, Noise, Vignette } from "@react-three/postprocessing";
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
 
-interface PositionProps {
+type PositionProps = {
   position: Number[];
   rotation: Number[];
   xrot: Number;
   yrot: Number;
 }
 
-const ThreeScene = () => {
+interface Data {
+  renderState: "always" | "demand";
+}
+
+const ThreeScene:FC<Data> = ({renderState}) => {
     const Computer: FC<PositionProps> = ({position, rotation, xrot, yrot}) => {
         const gltf = useLoader(GLTFLoader, '/assets/threejs/computer.gltf')
 
@@ -94,7 +98,7 @@ const ThreeScene = () => {
     }
         
   return (
-        <Canvas  camera={{ fov: 55, near: 0.1, far: 1000, position: [0, 0, 5] }}>
+        <Canvas frameloop={renderState} camera={{ fov: 55, near: 0.1, far: 1000, position: [0, 0, 5] }}>
             <Suspense fallback={null}>
                 <Computer position={[-0.2, 0.4, -2]} rotation={[0.1, -2, -0.2]} xrot={0.000} yrot={-0.002} />
                 <Notebook position={[1.6, -1.6, -1]} rotation={[0.1, -1.2, -0.2]} xrot={0.000} yrot={-0.002} />

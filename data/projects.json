@@ -46,7 +46,7 @@
         "name": "Personal finance",
         "img": "/assets/projects/finance.png",
         "role": "Full Stack",
-        "dates": "07/21 - 09/21",
+        "dates": "Information is missing",
         "desc": "This project presents a personal finance APP. I developed a full front-end and back-end to complete a full-stack-js challenge for the training platform 'Alkemy'. In this APP a user must register to start managing their finances, allowing them to record data of their movements and categorize them. The data is stored in a relational database (MariaDB).",
         "tech": [
           "ReactJS",
@@ -64,7 +64,7 @@
         "name": "My portfolio",
         "img": "/assets/projects/portfolio.png",
         "role": "Full Stack",
-        "dates": "07/21 - 09/21",
+        "dates": "Information is missing",
         "desc": "This project presents a personal finance APP. I developed a full front-end and back-end to complete a full-stack-js challenge for the training platform 'Alkemy'. In this APP a user must register to start managing their finances, allowing them to record data of their movements and categorize them. The data is stored in a relational database (MariaDB).",
         "tech": [
           "ReactJS",
@@ -79,7 +79,7 @@
         "name": "Inventory organizer",
         "img": "/assets/projects/inventory.png",
         "role": "Full Stack",
-        "dates": "07/21 - 09/21",
+        "dates": "Information is missing",
         "desc": "The application was developed to help manage my family's inventory. It was completely front-end and back-end, storing the data in a non-relational database (MongoDB). Complex cruds of users, spaces, items, images, movements, etc. were handled to allow users to record in detail the contents of their stores, as well as their positions physically and allow them to find them more easily. A tracking of the objects taken and entered objects is kept to know at all times that a user has consumed or has x object. Among other functionalities.",
         "tech": [
           "ReactJS",

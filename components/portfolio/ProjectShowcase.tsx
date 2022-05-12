@@ -19,15 +19,15 @@ export const ProjectShowcase:FC<Data> = ({projects, title}) => {
   return (
     <div>
       <h2 className="mb-8 text-teal-300 text-2xl border-x-4 px-3 mx-auto border-teal-300 max-w-min whitespace-nowrap">{title}</h2>
-      <div className='flex flex-col gap-6'>
+      <div className='flex flex-col gap-7'>
         {
           projects.map((project, i) => (
-            <div key={i} className="gap-2 lg:gap-7 justify-center flex flex-wrap overflow-hidden">
+            <div key={i} className="gap-3 lg:gap-7 justify-center flex flex-wrap">
               <div style={{minWidth: 380, minHeight: 200}} className='hover:scale-105 transition-transform flex justify-end items-center'>
                   {
                     project.img
                     ? <Image className='rounded-xl cursor-pointer' src={project.img} width={380} height={200} alt={`${project.name} image`}/>
-                    : <div style={{width: 380, height: 200}} className="bg-gray-900 rounded-xl flex flex-col justify-center items-center">
+                    : <div style={{width: 380, height: 200}} className="bg-gray-900 rounded-xl flex flex-col justify-center items-center cursor-pointer">
                         <HourglassTopOutlined />
                         <p className='font-medium'>No image at this time</p>
                       </div>

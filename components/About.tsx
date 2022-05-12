@@ -129,7 +129,7 @@ const About = () => {
           >
               <motion.h2 initial={{y: -70, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{type: 'spring', bounce: 0.2, duration: 2}} className="text-teal-300 text-2xl border-l-4 pl-3 border-teal-300">My studies</motion.h2>
               <motion.p initial={{y:-40, opacity: 0}} whileInView={{y: 0, opacity: 1}} transition={{type: 'spring', bounce: 0.2, duration: 2}}>
-                I an <span className='text-emerald-300'>autodidact</span> and a <span className='text-emerald-300'>fast learner</span>. I've been using the computer since I was a child and I'm very good at it.<br/>
+                I an <span className='text-emerald-300'>autodidact</span> and a <span className='text-emerald-300'>fast learner</span>. I have been using the computer since I was a child and I am very good at it.<br/>
                 All my knowledge was acquired through practice with different projects both for <span className='text-emerald-300'>practice</span> and <span className='text-emerald-300'>clients</span>, online courses, books, documentations, communities and friends who supported me.<br/>
                 <br/>
                 I have also done <span className='text-emerald-300'>internships</span> with the <span className='text-sky-300'>Alkemy</span> platform in which they prepare you to work in <span className='text-teal-300'>companies</span>, carrying out a project, with a <span className='text-emerald-300'>team</span>, mentors and all the tools used in a professional environment.<br/>
